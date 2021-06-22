@@ -7,12 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 
+
   <style>
     * {
       box-sizing: border-box;
     }
-
-    /* 패딩 보더선 포함해서 계산하도록 선언. 밀리지 않음. 필수적 선언문. */
 
     .clearfix::after {
       content: "";
@@ -24,30 +23,33 @@
       float: left;
       width: 33.33%;
       height: 200px;
-      background-color: aquamarine;
+      background-color: orangered;
       border: 1px solid black;
-      /* padding: 20px; */
     }
 
-    /* Extra small devices (phones, 600px and down) */
-    @media only screen and (max-width: 600px) {
-      /* .box-container {
-        float: none;
-      } */
-
+    @media only screen and (max-width:600px) {
       .box {
         width: 100%;
       }
     }
   </style>
+
+
+
 </head>
 
 <body>
+
   <div class="clearfix">
+
     <div class="box"></div>
     <div class="box"></div>
     <div class="box"></div>
+
+
+
   </div>
+
 </body>
 
 </html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    .example {
+      padding: 20px;
+      color: white;
+    }
+
+    @media only screen and (max-width: 600px) {
+      .example {
+        background-color: orange;
+      }
+
+    }
+
+
+
+    @media only screen and (min-width: 600px) {
+      .example {
+        background-color: yellow;
+      }
+    }
+
+
+
+    @media only screen and (min-width: 768px) {
+      .example {
+        background-color: royalblue;
+      }
+    }
+
+
+    /* Large devices (laptops/desktops, 992px and up) */
+    @media only screen and (min-width:992px) {
+      .example {
+        background-color: plum;
+      }
+    }
+
+    /* Extra large devices (large laptops and desktops, 1200px and up) */
+    @media only screen and (min-width:1200px) {
+      .example {
+        background-color: pink;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <h2>반응형 웹을 만들어보자.</h2>
+
+  <p class="example">이 문구는 화면 사이즈에 따라 변합니다.</p>
+
+</body>
+
+</html>
